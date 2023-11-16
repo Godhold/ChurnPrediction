@@ -2,9 +2,12 @@ import streamlit as st
 import joblib
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
+from tensorflow.keras.models import load_model
+
+
 
 # Load the trained model
-model = joblib.load('/Users/godholdalomenu/Desktop/ChurnPrediction/model.keras ')
+model = model.load('/Users/godholdalomenu/Desktop/ChurnPrediction/model.keras ')
 
 # Load the trained scaler
 scaler = joblib.load('/Users/godholdalomenu/Desktop/Churn_Deployment/churn_scaler.pkl')
