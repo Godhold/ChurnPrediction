@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Churn Prediction</title>
+</head>
+<body>
+    <h1>Churn Prediction</h1>
+    <form method="post" action="/predict">
+        <!-- Include input fields for Contract, Partner, Dependents, PaperlessBilling, PaymentMethod, TotalCharges, and ServiceFeatures -->
+        <!-- Use appropriate input types and names -->
+        <label for="Contract">Contract:</label>
+        <input type="text" name="Contract" id="Contract" placeholder="Contract" required>
+
+        <label for="Partner">Partner:</label>
+        <input type="text" name="Partner" id="Partner" placeholder="Partner" required>
+
+        <label for="Dependents">Dependents:</label>
+        <input type="text" name="Dependents" id="Dependents" placeholder="Dependents" required>
+
+        <label for="PaperlessBilling">PaperlessBilling:</label>
+        <input type="text" name="PaperlessBilling" id="PaperlessBilling" placeholder="PaperlessBilling" required>
+
+        <label for="PaymentMethod">PaymentMethod:</label>
+        <input type="text" name="PaymentMethod" id="PaymentMethod" placeholder="PaymentMethod" required>
+
+        <label for="TotalCharges">TotalCharges:</label>
+        <input type="text" name="TotalCharges" id="TotalCharges" placeholder="TotalCharges" required>
+
+        <label for="ServiceFeatures">ServiceFeatures:</label>
+        <input type="text" name="ServiceFeatures" id="ServiceFeatures" placeholder="ServiceFeatures" required>
+
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
